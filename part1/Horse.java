@@ -2,7 +2,7 @@
  * Horse Class object
  * 
  * @author Alejandro De Guzman
- * @version 17/03/25 Version 1
+ * @version 17/03/25 Version 1.0
  */
 
 public class Horse {
