@@ -24,21 +24,35 @@ public class Main {
         // System.out.println("Fall state: " + testHorse.hasFallen());
 
         // testing getter and setter methods...
-        Horse testHorse = new Horse("Roach", 'R', 0.5);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
-        System.out.println("Setting new confidence!");
-        testHorse.setConfidence(0.6);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
-        System.out.println("\nChecking Boundaries!");
+        // Horse testHorse = new Horse("Roach", 'R', 0.5);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // System.out.println("Setting new confidence!");
+        // testHorse.setConfidence(0.6);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // System.out.println("\nChecking Boundaries!");
 
         // check boundaries
-        testHorse.setConfidence(0);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
-        testHorse.setConfidence(1);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
-        testHorse.setConfidence(-1);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
-        testHorse.setConfidence(10);
-        System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // testHorse.setConfidence(0);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // testHorse.setConfidence(1);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // testHorse.setConfidence(-1);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+        // testHorse.setConfidence(10);
+        // System.out.println("Confidence Rating: " + testHorse.getConfidence());
+
+        // testing distance methods...
+        Horse testHorse = new Horse("Roach", 'R', 0.5);
+        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        testHorse.moveForward();
+        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        testHorse.moveForward();
+        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        testHorse.moveForward();
+        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+
+        System.out.println("\nGoing back to start!");
+        testHorse.goBackToStart();
+        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
     }
 }
