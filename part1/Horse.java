@@ -65,7 +65,11 @@ public class Horse {
     }
 
     public void setConfidence(double newConfidence) {
-        this.confidenceRating = newConfidence;
+        if (newConfidence < 1 && newConfidence > 0) {
+            this.confidenceRating = newConfidence;
+        } else {
+            System.out.println("Not a valid argument!");
+        }
     }
 
     public void setSymbol(char newSymbol) {
