@@ -10,12 +10,17 @@ public class Main {
         // race.startRace();
 
         // test constructor
-        try {
-            Horse testHorse = new Horse("Roach", 'R', 0);
-            System.out.println("No Bug!");
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        // try {
+        // Horse testHorse = new Horse("Roach", 'R', 0);
+        // System.out.println("No Bug!");
+        // } catch (Exception e) {
+        // System.out.println(e);
+        // }
 
+        // testing fall method
+        Horse testHorse = new Horse("Roach", 'R', 0.5);
+        System.out.println("Fall state: " + testHorse.hasFallen());
+        testHorse.fall();
+        System.out.println("Fall state: " + testHorse.hasFallen());
     }
 }
