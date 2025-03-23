@@ -56,9 +56,17 @@ public class Main {
         // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
 
         // testing getter method for name
-        Horse testHorse1 = new Horse("Roach", 'R', 0.5);
-        Horse testHorse2 = new Horse("Leya", 'R', 0.5);
-        System.out.println("Horse Name: " + testHorse1.getName());
-        System.out.println("Horse Name: " + testHorse2.getName());
+        // Horse testHorse1 = new Horse("Roach", 'R', 0.5);
+        // Horse testHorse2 = new Horse("Leya", 'R', 0.5);
+        // System.out.println("Horse Name: " + testHorse1.getName());
+        // System.out.println("Horse Name: " + testHorse2.getName());
+
+        // testing symbol methods
+        Horse testHorse = new Horse("Roach", 'R', 0.5);
+        System.out.println("Horse Symbol: " + testHorse.getSymbol());
+        testHorse.setSymbol('G');
+        System.out.println("Horse Symbol: " + testHorse.getSymbol());
+
+        testHorse.setSymbol("R");
     }
 }
