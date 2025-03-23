@@ -42,17 +42,23 @@ public class Main {
         // System.out.println("Confidence Rating: " + testHorse.getConfidence());
 
         // testing distance methods...
-        Horse testHorse = new Horse("Roach", 'R', 0.5);
-        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
-        testHorse.moveForward();
-        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
-        testHorse.moveForward();
-        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
-        testHorse.moveForward();
-        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        // Horse testHorse = new Horse("Roach", 'R', 0.5);
+        // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        // testHorse.moveForward();
+        // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        // testHorse.moveForward();
+        // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        // testHorse.moveForward();
+        // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        //
+        // System.out.println("\nGoing back to start!");
+        // testHorse.goBackToStart();
+        // System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
 
-        System.out.println("\nGoing back to start!");
-        testHorse.goBackToStart();
-        System.out.println("Horse Distance: " + testHorse.getDistanceTravelled());
+        // testing getter method for name
+        Horse testHorse1 = new Horse("Roach", 'R', 0.5);
+        Horse testHorse2 = new Horse("Leya", 'R', 0.5);
+        System.out.println("Horse Name: " + testHorse1.getName());
+        System.out.println("Horse Name: " + testHorse2.getName());
     }
 }
